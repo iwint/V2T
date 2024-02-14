@@ -10,6 +10,7 @@ import {
 import DocumentPicker, { types } from 'react-native-document-picker';
 import 'react-native-gesture-handler';
 import { Navigator } from './navigation';
+import { PaperProvider } from 'react-native-paper';
 
 const { PERMISSIONS, check, RESULTS, request } = PermissionsAndroid;
 const BASE_URL = 'http://192.168.238.67:8000/get_text';
@@ -103,7 +104,9 @@ function App(): React.JSX.Element {
     //     <Button title="Get Audio" onPress={() => handleGetAudio()} />
     //   )}
     // </View>
-    <Navigator />
+    <PaperProvider>
+      <Navigator />
+    </PaperProvider>
   );
 }
 

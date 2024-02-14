@@ -9,7 +9,14 @@ export default function AuthNavigation() {
   return (
     <AuthStack.Navigator
       screenOptions={{
-        headerShown: true
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: "#000",
+          elevation: 0
+        },
+        headerTitleStyle: {
+          color: "#fff"
+        }
       }}
     >
       <AuthStack.Screen

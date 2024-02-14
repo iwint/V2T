@@ -9,11 +9,11 @@ const Stack = createStackNavigator()
 export function Navigator() {
   return (
     <NavigationContainer>
-      <SafeAreaView style={{ flex: 1 }}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: "#000" }}>
         <Stack.Navigator
           screenOptions={{
             headerShown: false,
-            cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
+            cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
           }}
         >
           <Stack.Screen

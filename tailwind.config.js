@@ -7,6 +7,9 @@ module.exports = {
     './src/**/**/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    colors: {
+      primary_color: '#DE2121',
+    },
     extend: {},
   },
   plugins: ['nativewind/babel'],
